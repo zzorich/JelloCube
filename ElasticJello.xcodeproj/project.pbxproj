@@ -11,7 +11,28 @@
 		4F49FBD22B704E740073F6AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F49FBD12B704E740073F6AA /* ContentView.swift */; };
 		4F49FBD42B704E750073F6AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F49FBD32B704E750073F6AA /* Assets.xcassets */; };
 		4F49FBD82B704E750073F6AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F49FBD72B704E750073F6AA /* Preview Assets.xcassets */; };
+		4F49FBDF2B705CF10073F6AA /* ViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F49FBDE2B705CF10073F6AA /* ViewRepresentable.swift */; };
+		4F49FBE12B705F220073F6AA /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F49FBE02B705F220073F6AA /* MetalView.swift */; };
+		4F49FBE32B70601B0073F6AA /* JelloRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F49FBE22B70601B0073F6AA /* JelloRenderer.swift */; };
+		4F49FBE52B707DBF0073F6AA /* TriangleShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 4F49FBE42B707DBF0073F6AA /* TriangleShader.metal */; };
+		4F49FBF12B70A6510073F6AA /* JelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F49FBF02B70A6510073F6AA /* JelloViewController.swift */; };
+		4F49FC052B70BDF70073F6AA /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 4F49FC042B70BDF70073F6AA /* Algorithms */; };
+		4F49FDBD2B7179060073F6AA /* MassPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F49FDBC2B7179060073F6AA /* MassPoint.swift */; };
+		4F75B45B2B720F1D005B7C73 /* Surface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F75B45A2B720F1D005B7C73 /* Surface.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4F49FC1B2B70C0410073F6AA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4F49FBCC2B704E740073F6AA /* ElasticJello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElasticJello.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +41,19 @@
 		4F49FBD32B704E750073F6AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F49FBD52B704E750073F6AA /* ElasticJello.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ElasticJello.entitlements; sourceTree = "<group>"; };
 		4F49FBD72B704E750073F6AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4F49FBDE2B705CF10073F6AA /* ViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRepresentable.swift; sourceTree = "<group>"; };
+		4F49FBE02B705F220073F6AA /* MetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
+		4F49FBE22B70601B0073F6AA /* JelloRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JelloRenderer.swift; sourceTree = "<group>"; };
+		4F49FBE42B707DBF0073F6AA /* TriangleShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TriangleShader.metal; sourceTree = "<group>"; };
+		4F49FBE72B70988C0073F6AA /* ElasticJello-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ElasticJello-Bridging-Header.h"; sourceTree = "<group>"; };
+		4F49FBEF2B7099D00073F6AA /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		4F49FBF02B70A6510073F6AA /* JelloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JelloViewController.swift; sourceTree = "<group>"; };
+		4F49FDAB2B70E0680073F6AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4F49FDAD2B70E0750073F6AA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4F49FDAF2B70E0810073F6AA /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		4F49FDB62B70EBFD0073F6AA /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		4F49FDBC2B7179060073F6AA /* MassPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassPoint.swift; sourceTree = "<group>"; };
+		4F75B45A2B720F1D005B7C73 /* Surface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Surface.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F49FC052B70BDF70073F6AA /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +73,7 @@
 			children = (
 				4F49FBCE2B704E740073F6AA /* ElasticJello */,
 				4F49FBCD2B704E740073F6AA /* Products */,
+				4F49FDAA2B70E0680073F6AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,11 +88,13 @@
 		4F49FBCE2B704E740073F6AA /* ElasticJello */ = {
 			isa = PBXGroup;
 			children = (
-				4F49FBCF2B704E740073F6AA /* ElasticJelloApp.swift */,
-				4F49FBD12B704E740073F6AA /* ContentView.swift */,
+				4F49FBE72B70988C0073F6AA /* ElasticJello-Bridging-Header.h */,
+				4F49FDBB2B70F4BC0073F6AA /* Renderers */,
+				4F49FDB92B70F48C0073F6AA /* UI */,
 				4F49FBD32B704E750073F6AA /* Assets.xcassets */,
 				4F49FBD52B704E750073F6AA /* ElasticJello.entitlements */,
 				4F49FBD62B704E750073F6AA /* Preview Content */,
+				4F49FDBA2B70F4990073F6AA /* SupportFiles */,
 			);
 			path = ElasticJello;
 			sourceTree = "<group>";
@@ -69,6 +107,48 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		4F49FDAA2B70E0680073F6AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F49FDB62B70EBFD0073F6AA /* MetalKit.framework */,
+				4F49FDAF2B70E0810073F6AA /* Metal.framework */,
+				4F49FDAD2B70E0750073F6AA /* QuartzCore.framework */,
+				4F49FDAB2B70E0680073F6AA /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F49FDB92B70F48C0073F6AA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4F49FBCF2B704E740073F6AA /* ElasticJelloApp.swift */,
+				4F49FBD12B704E740073F6AA /* ContentView.swift */,
+				4F49FBDE2B705CF10073F6AA /* ViewRepresentable.swift */,
+				4F49FBE02B705F220073F6AA /* MetalView.swift */,
+				4F49FBF02B70A6510073F6AA /* JelloViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4F49FDBA2B70F4990073F6AA /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		4F49FDBB2B70F4BC0073F6AA /* Renderers */ = {
+			isa = PBXGroup;
+			children = (
+				4F49FBEF2B7099D00073F6AA /* ShaderTypes.h */,
+				4F49FBE22B70601B0073F6AA /* JelloRenderer.swift */,
+				4F49FBE42B707DBF0073F6AA /* TriangleShader.metal */,
+				4F49FDBC2B7179060073F6AA /* MassPoint.swift */,
+				4F75B45A2B720F1D005B7C73 /* Surface.swift */,
+			);
+			path = Renderers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,12 +159,16 @@
 				4F49FBC82B704E740073F6AA /* Sources */,
 				4F49FBC92B704E740073F6AA /* Frameworks */,
 				4F49FBCA2B704E740073F6AA /* Resources */,
+				4F49FC1B2B70C0410073F6AA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ElasticJello;
+			packageProductDependencies = (
+				4F49FC042B70BDF70073F6AA /* Algorithms */,
+			);
 			productName = ElasticJello;
 			productReference = 4F49FBCC2B704E740073F6AA /* ElasticJello.app */;
 			productType = "com.apple.product-type.application";
@@ -101,6 +185,7 @@
 				TargetAttributes = {
 					4F49FBCB2B704E740073F6AA = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 				};
 			};
@@ -113,6 +198,9 @@
 				Base,
 			);
 			mainGroup = 4F49FBC32B704E740073F6AA;
+			packageReferences = (
+				4F49FC032B70BDF70073F6AA /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			productRefGroup = 4F49FBCD2B704E740073F6AA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +227,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F49FDBD2B7179060073F6AA /* MassPoint.swift in Sources */,
+				4F49FBE12B705F220073F6AA /* MetalView.swift in Sources */,
+				4F49FBF12B70A6510073F6AA /* JelloViewController.swift in Sources */,
+				4F49FBE32B70601B0073F6AA /* JelloRenderer.swift in Sources */,
+				4F49FBE52B707DBF0073F6AA /* TriangleShader.metal in Sources */,
 				4F49FBD22B704E740073F6AA /* ContentView.swift in Sources */,
 				4F49FBD02B704E740073F6AA /* ElasticJelloApp.swift in Sources */,
+				4F75B45B2B720F1D005B7C73 /* Surface.swift in Sources */,
+				4F49FBDF2B705CF10073F6AA /* ViewRepresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,11 +294,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -254,10 +351,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_INTEROP_MODE = objcxx;
 			};
 			name = Release;
 		};
@@ -266,6 +365,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ElasticJello/ElasticJello.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -294,6 +394,8 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ElasticJello/ElasticJello-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,6 +406,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = ElasticJello/ElasticJello.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -332,6 +435,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ElasticJello/ElasticJello-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -359,6 +463,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4F49FC032B70BDF70073F6AA /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4F49FC042B70BDF70073F6AA /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F49FC032B70BDF70073F6AA /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4F49FBC42B704E740073F6AA /* Project object */;
 }
